@@ -12,7 +12,7 @@ export const projects = [
     ],
     "liveUrl": "",  
     "githubUrl": "https://github.com/Kirito034/AI_Assist.git",
-    "exeFile": "/JarvisSetup.exe",
+    "exeFile": "https://drive.google.com/file/d/1Dvt36e7jEesnk9EuVRe6fZwaAaZCgdch/view?usp=drive_link",
     "image": "/images/Jarvis.gif"
 
   },
