@@ -16,15 +16,16 @@ export const projects = [
     "image": "/images/Jarvis.gif"
 
   },
-    {
-      title: "Task Management App",
-      shortDescription: "A collaborative task management tool for teams",
-      description: "A productivity application that helps teams organize and track their tasks. Built with React and Firebase, it includes features like real-time updates, task assignments, due dates, and progress tracking.",
-      technologies: ["React", "Firebase", "Material UI", "Redux"],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com/Kirito034",
-    },
-  ]
+  {
+    title: "Echo",
+    shortDescription: "An end-to-end real-time messaging platform",
+    description: "Echo is a full-stack, real-time messaging platform built with TypeScript, WebSockets, and Express. It supports instant communication between users with live message delivery, scalable architecture, and a sleek UI. Designed for speed, reliability, and ease of use.",
+    technologies: ["TypeScript", "WebSockets", "Express", "Node.js", "Vite"],
+    liveUrl: "https://echo-production-76fc.up.railway.app/",
+    githubUrl: "https://github.com/Kirito034/Echo",
+    "image": "/images/Jarvis.gif"
+  }
+    ]
   
   // Skills data
   export const skills = [
