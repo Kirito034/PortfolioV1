@@ -1,32 +1,33 @@
 // Projects data
 export const projects = [
   {
-    "title": "Jarvis - AI Voice Assistant",
-    "shortDescription": "An intelligent AI-powered voice assistant with automation capabilities.",
-    "description": "Jarvis is a Python-based AI voice assistant that automates tasks, fetches information, translates text, controls applications, and more. Built using various AI and automation libraries, it offers seamless interaction and productivity enhancement.",
-    "technologies": [
+    title: "Jarvis - AI Voice Assistant",
+    shortDescription: "An intelligent AI-powered voice assistant with automation capabilities.",
+    description:
+      "Jarvis is a Python-based AI voice assistant that automates tasks, fetches information, translates text, controls applications, and more. Built using various AI and automation libraries, it offers seamless interaction and productivity enhancement.",
+    technologies: [
       "Python", "python-dotenv", "groq", "AppOpener", "pywhatkit",
       "bs4", "pillow", "rich", "requests", "keyboard", "cohere",
       "googlesearch-python", "selenium", "mtranslate", "pygame",
       "edge-tts", "PyQt5", "webdriver-manager"
     ],
-    "liveUrl": "",  
-    "githubUrl": "https://github.com/Kirito034/AI_Assist.git",
-    "exeFile": "https://drive.google.com/file/d/1Dvt36e7jEesnk9EuVRe6fZwaAaZCgdch/view?usp=drive_link",
-    "image": "/images/Jarvis.gif"
-
+    liveUrl: "",
+    githubUrl: "https://github.com/Kirito034/AI_Assist.git",
+    exeFile: "https://drive.google.com/file/d/1Dvt36e7jEesnk9EuVRe6fZwaAaZCgdch/view?usp=drive_link",
+    image: "/images/Jarvis.gif"
   },
   {
     title: "Echo",
     shortDescription: "An end-to-end real-time messaging platform",
-    description: "Echo is a full-stack, real-time messaging platform built with TypeScript, WebSockets, and Express. It supports instant communication between users with live message delivery, scalable architecture, and a sleek UI. Designed for speed, reliability, and ease of use.",
+    description:
+      "Echo is a full-stack, real-time messaging platform built with TypeScript, WebSockets, and Express. It supports instant communication between users with live message delivery, scalable architecture, and a sleek UI. Designed for speed, reliability, and ease of use.",
     technologies: ["TypeScript", "WebSockets", "Express", "Node.js", "Vite"],
     liveUrl: "https://echo-production-76fc.up.railway.app/",
     githubUrl: "https://github.com/Kirito034/Echo",
-    "image": "/images/Jarvis.gif"
+    image: "/images/generated-icon.png"
   }
-    ]
-  
+]
+
   // Skills data
   export const skills = [
     { name: "React", category: "frontend", image: "/images/react.png" },
