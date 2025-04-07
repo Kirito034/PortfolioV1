@@ -182,40 +182,62 @@ export function ProjectsSection({ projects }) {
                     transition: { duration: 0.3 },
                   }}
                 >
-                  <div className="project-image">
-                    {project.image ? (
-                      <img src={project.image || "/placeholder.svg"} alt={project.title} className="project-gif" />
-                    ) : (
-                      <div className="project-placeholder"></div>
-                    )}
-                    <div className="project-overlay">
-                    <a 
-                      href={project.exeFile} 
-                      download 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
-                      className="project-link"
-                    >
-                      <ExternalLink size={20} />
-                      <span>Download Setup</span>
-                    </a>
-                      <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="project-link">
-                        <Github size={20} />
-                        <span>Code</span>
-                      </a>
-                    </div>
-                  </div>
-                  <div className="project-info">
-                    <h3>{project.title}</h3>
-                    <p>{project.description}</p>
-                    <div className="project-tech">
-                      {project.technologies.map((tech, i) => (
-                        <span key={i} className="tech-tag">
-                          {tech}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
+                 <div className="project-image">
+  {project.image ? (
+    <img src={project.image || "/placeholder.svg"} alt={project.title} className="project-gif" />
+  ) : (
+    <div className="project-placeholder"></div>
+  )}
+
+  <div className="project-overlay">
+    {/* Conditional CTA button */}
+    {project.exeFile ? (
+      <a 
+        href={project.exeFile} 
+        download 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        className="project-link"
+      >
+        <ExternalLink size={20} />
+        <span>Download Setup</span>
+      </a>
+    ) : project.liveUrl ? (
+      <a 
+        href={project.liveUrl} 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        className="project-link"
+      >
+        <ExternalLink size={20} />
+        <span>Visit Site</span>
+      </a>
+    ) : null}
+
+    {/* GitHub button (common for both) */}
+    <a 
+      href={project.githubUrl} 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      className="project-link"
+    >
+      <Github size={20} />
+      <span>Code</span>
+    </a>
+  </div>
+</div>
+
+<div className="project-info">
+  <h3>{project.title}</h3>
+  <p>{project.description}</p>
+  <div className="project-tech">
+    {project.technologies.map((tech, i) => (
+      <span key={i} className="tech-tag">
+        {tech}
+      </span>
+    ))}
+  </div>
+</div>
                 </motion.div>
               ))}
             </motion.div>
