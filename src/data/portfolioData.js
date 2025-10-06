@@ -22,7 +22,7 @@ export const projects = [
     description:
       "Echo is a full-stack, real-time messaging platform built with TypeScript, WebSockets, and Express. It supports instant communication between users with live message delivery, scalable architecture, and a sleek UI. Designed for speed, reliability, and ease of use.",
     technologies: ["TypeScript", "WebSockets", "Express", "Node.js", "Vite"],
-    liveUrl: "https://echo-production-76fc.up.railway.app/",
+    liveUrl: "https://echo-0f8u.onrender.com",
     githubUrl: "https://github.com/Kirito034/Echo",
     image: "/images/generated-icon.png"
   }
